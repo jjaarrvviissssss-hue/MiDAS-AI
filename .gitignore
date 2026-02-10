@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Audio files
+*.wav
+*.mp3
+*.aif
+*.aiff
+*.m4a
+
+# Logic Pro files
+*.logicx
+*.logic
+
+# Env files
+.env
+
+# Logs
+*.log
