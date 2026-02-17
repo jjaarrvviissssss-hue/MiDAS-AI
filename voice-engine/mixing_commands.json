@@ -1,0 +1,209 @@
+{
+  "volume_adjust": {
+    "patterns": [
+      "turn {track} up {amount}",
+      "turn {track} down {amount}",
+      "bring {track} up {amount}",
+      "bring {track} down {amount}",
+      "increase {track} {amount}",
+      "decrease {track} {amount}",
+      "{track} up {amount}",
+      "{track} down {amount}",
+      "louder {track}",
+      "quieter {track}",
+      "raise {track}",
+      "lower {track}"
+    ],
+    "script": "mixing.scpt",
+    "default_amount": 3,
+    "examples": [
+      "vocals up 3 dB",
+      "drums down a bit",
+      "louder vocals",
+      "turn bass down 6"
+    ]
+  },
+  
+  "volume_set": {
+    "patterns": [
+      "set {track} to {amount}",
+      "{track} to {amount}",
+      "make {track} {preset}"
+    ],
+    "script": "mixing.scpt",
+    "presets": {
+      "loud": 3,
+      "normal": 0,
+      "unity": 0,
+      "quiet": -6,
+      "whisper": -12
+    },
+    "examples": [
+      "set vocals to 0 dB",
+      "vocals to -6",
+      "make drums loud"
+    ]
+  },
+  
+  "mute": {
+    "patterns": [
+      "mute {track}",
+      "silence {track}",
+      "turn off {track}",
+      "{track} off"
+    ],
+    "script": "mixing.scpt",
+    "examples": [
+      "mute vocals",
+      "turn off drums",
+      "silence bass"
+    ]
+  },
+  
+  "unmute": {
+    "patterns": [
+      "unmute {track}",
+      "bring back {track}",
+      "turn on {track}",
+      "{track} on"
+    ],
+    "script": "mixing.scpt",
+    "examples": [
+      "unmute vocals",
+      "bring back drums",
+      "turn on bass"
+    ]
+  },
+  
+  "toggle_mute": {
+    "patterns": [
+      "toggle {track}",
+      "flip {track}"
+    ],
+    "script": "mixing.scpt",
+    "examples": [
+      "toggle vocals",
+      "flip drums"
+    ]
+  },
+  
+  "solo": {
+    "patterns": [
+      "solo {track}",
+      "only {track}",
+      "just {track}",
+      "isolate {track}"
+    ],
+    "script": "mixing.scpt",
+    "examples": [
+      "solo vocals",
+      "only drums",
+      "just bass"
+    ]
+  },
+  
+  "unsolo": {
+    "patterns": [
+      "unsolo {track}",
+      "bring back everything",
+      "hear everything",
+      "unsolo all",
+      "clear solo"
+    ],
+    "script": "mixing.scpt",
+    "examples": [
+      "unsolo vocals",
+      "unsolo all",
+      "bring back everything"
+    ]
+  },
+  
+  "group_adjust": {
+    "patterns": [
+      "all {group} up {amount}",
+      "all {group} down {amount}",
+      "{group} tracks up {amount}",
+      "{group} tracks down {amount}"
+    ],
+    "script": "mixing.scpt",
+    "examples": [
+      "all drums up 2 dB",
+      "all vocals down 3",
+      "guitar tracks up 1"
+    ]
+  },
+  
+  "reset": {
+    "patterns": [
+      "reset all volumes",
+      "reset everything",
+      "zero all",
+      "unity all"
+    ],
+    "script": "mixing.scpt",
+    "examples": [
+      "reset all volumes",
+      "zero all"
+    ]
+  },
+  
+  "status": {
+    "patterns": [
+      "what's {track} at",
+      "check {track}",
+      "{track} status",
+      "how loud is {track}"
+    ],
+    "script": "mixing.scpt",
+    "examples": [
+      "what's vocals at",
+      "check drums",
+      "how loud is bass"
+    ]
+  },
+  
+  "list_tracks": {
+    "patterns": [
+      "list tracks",
+      "list track",
+      "show tracks",
+      "show track",
+      "what tracks",
+      "all tracks"
+    ],
+    "script": "mixing.scpt",
+    "examples": [
+      "list tracks",
+      "show all tracks"
+    ]
+  },
+  
+  "fuzzy_amounts": {
+    "a bit": 2,
+    "a little": 2,
+    "slightly": 1,
+    "somewhat": 3,
+    "a lot": 6,
+    "way": 10,
+    "lots": 6
+  },
+  
+  "track_aliases": {
+    "vocal": "vocals",
+    "vox": "vocals",
+    "voice": "vocals",
+    "drum": "drums",
+    "percussion": "drums",
+    "perc": "drums",
+    "kick": "kick drum",
+    "snare": "snare drum",
+    "hi hat": "hi-hat",
+    "hihat": "hi-hat",
+    "guitar": "guitars",
+    "gtr": "guitars",
+    "bass": "bass",
+    "keys": "keyboards",
+    "piano": "piano",
+    "synth": "synths"
+  }
+}
