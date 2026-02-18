@@ -1,0 +1,265 @@
+{
+  "transport": {
+    "patterns": [
+      "play",
+      "start playing",
+      "hit play",
+      "press play",
+      "stop",
+      "stop playing",
+      "pause",
+      "pause it",
+      "play pause",
+      "toggle play",
+      "rewind to start",
+      "go to beginning",
+      "start over",
+      "back to the top"
+    ],
+    "script": "navigation.scpt",
+    "examples": [
+      "play",
+      "stop",
+      "pause",
+      "rewind to start"
+    ]
+  },
+  
+  "jump_forward": {
+    "patterns": [
+      "forward {amount}",
+      "skip {amount}",
+      "jump {amount}",
+      "fast forward {amount}"
+    ],
+    "script": "navigation.scpt",
+    "default_amount": 4,
+    "examples": [
+      "forward 8 bars",
+      "skip 4",
+      "jump 16"
+    ]
+  },
+  
+  "jump_back": {
+    "patterns": [
+      "back {amount}",
+      "rewind {amount}",
+      "go back {amount}"
+    ],
+    "script": "navigation.scpt",
+    "default_amount": 4,
+    "examples": [
+      "back 4 bars",
+      "rewind 8",
+      "go back 16"
+    ]
+  },
+  
+  "jump_to_marker": {
+    "patterns": [
+      "jump to {marker}",
+      "go to {marker}",
+      "play from {marker}",
+      "take me to {marker}"
+    ],
+    "script": "navigation.scpt",
+    "examples": [
+      "jump to chorus",
+      "go to verse",
+      "play bridge",
+      "play from intro"
+    ]
+  },
+  
+  "marker_nav": {
+    "patterns": [
+      "next marker",
+      "previous marker",
+      "last marker",
+      "marker {number}",
+      "jump to marker {number}"
+    ],
+    "script": "navigation.scpt",
+    "examples": [
+      "next marker",
+      "previous marker",
+      "marker 3",
+      "jump to marker 1"
+    ]
+  },
+  
+  "create_marker": {
+    "patterns": [
+      "mark this as {name}",
+      "create marker {name}",
+      "add marker {name}",
+      "marker called {name}"
+    ],
+    "script": "navigation.scpt",
+    "examples": [
+      "mark this as chorus",
+      "create marker verse 2",
+      "add marker bridge"
+    ]
+  },
+  
+  "list_markers": {
+    "patterns": [
+      "list markers",
+      "show markers",
+      "what markers",
+      "all markers"
+    ],
+    "script": "navigation.scpt",
+    "examples": [
+      "list markers",
+      "show all markers"
+    ]
+  },
+  
+  "loop_section": {
+    "patterns": [
+      "loop {start} to {end}",
+      "loop bars {start} to {end}",
+      "loop from {start} to {end}",
+      "cycle {start} to {end}"
+    ],
+    "script": "navigation.scpt",
+    "examples": [
+      "loop 8 to 16",
+      "loop bars 1 to 8",
+      "loop from 12 to 20"
+    ]
+  },
+  
+  "loop_markers": {
+    "patterns": [
+      "loop {start_marker} to {end_marker}",
+      "loop from {start_marker} to {end_marker}",
+      "cycle {start_marker} to {end_marker}"
+    ],
+    "script": "navigation.scpt",
+    "examples": [
+      "loop verse to chorus",
+      "loop intro to verse",
+      "cycle bridge to outro"
+    ]
+  },
+  
+  "loop_from_here": {
+    "patterns": [
+      "loop {amount} bars",
+      "loop next {amount}",
+      "cycle {amount} bars",
+      "loop {amount} from here"
+    ],
+    "script": "navigation.scpt",
+    "default_amount": 8,
+    "examples": [
+      "loop 8 bars",
+      "loop next 16",
+      "cycle 4 from here"
+    ]
+  },
+  
+  "toggle_loop": {
+    "patterns": [
+      "loop on",
+      "loop off",
+      "toggle loop",
+      "enable loop",
+      "disable loop",
+      "turn loop on",
+      "turn loop off"
+    ],
+    "script": "navigation.scpt",
+    "examples": [
+      "loop on",
+      "toggle loop",
+      "disable loop"
+    ]
+  },
+  
+  "tempo_set": {
+    "patterns": [
+      "set tempo {bpm}",
+      "tempo {bpm}",
+      "{bpm} bpm",
+      "change tempo to {bpm}"
+    ],
+    "script": "navigation.scpt",
+    "examples": [
+      "set tempo 120",
+      "tempo 140",
+      "90 bpm"
+    ]
+  },
+  
+  "tempo_adjust": {
+    "patterns": [
+      "tempo up {amount}",
+      "tempo down {amount}",
+      "faster {amount}",
+      "slower {amount}",
+      "speed up {amount}",
+      "slow down {amount}"
+    ],
+    "script": "navigation.scpt",
+    "default_amount": 5,
+    "examples": [
+      "tempo up 10",
+      "slower 5",
+      "speed up 15"
+    ]
+  },
+  
+  "tempo_query": {
+    "patterns": [
+      "what's the tempo",
+      "current tempo",
+      "tempo",
+      "how fast",
+      "what bpm"
+    ],
+    "script": "navigation.scpt",
+    "examples": [
+      "what's the tempo",
+      "current tempo"
+    ]
+  },
+  
+  "position_query": {
+    "patterns": [
+      "where am i",
+      "current position",
+      "what bar",
+      "playhead position"
+    ],
+    "script": "navigation.scpt",
+    "examples": [
+      "where am i",
+      "what bar"
+    ]
+  },
+  
+  "common_sections": {
+    "intro": ["intro", "introduction"],
+    "verse": ["verse", "verse 1", "verse 2", "verse one", "verse two"],
+    "chorus": ["chorus", "hook"],
+    "bridge": ["bridge"],
+    "outro": ["outro", "ending"],
+    "breakdown": ["breakdown", "break"],
+    "drop": ["drop", "the drop"],
+    "build": ["build", "buildup", "build up"]
+  },
+  
+  "fuzzy_amounts": {
+    "a few": 2,
+    "couple": 2,
+    "several": 4,
+    "some": 4,
+    "many": 8,
+    "a lot": 16
+  }
+}
