@@ -1,0 +1,265 @@
+{
+  "track_creation": [
+    {
+      "patterns": [
+        "create audio track",
+        "new audio track",
+        "add audio track",
+        "make audio track"
+      ],
+      "action": "create_audio",
+      "vars": []
+    },
+    {
+      "patterns": [
+        "create midi track",
+        "new midi track",
+        "add midi track",
+        "create instrument",
+        "new instrument track",
+        "add instrument"
+      ],
+      "action": "create_midi",
+      "vars": []
+    },
+    {
+      "patterns": [
+        "create aux",
+        "new aux track",
+        "add aux",
+        "create aux track"
+      ],
+      "action": "create_aux",
+      "vars": []
+    },
+    {
+      "patterns": [
+        "duplicate track {num}",
+        "copy track {num}",
+        "clone track {num}"
+      ],
+      "action": "duplicate",
+      "vars": ["num"]
+    },
+    {
+      "patterns": [
+        "delete track {num}",
+        "remove track {num}",
+        "get rid of track {num}"
+      ],
+      "action": "delete",
+      "vars": ["num"]
+    }
+  ],
+  
+  "track_naming": [
+    {
+      "patterns": [
+        "rename track {num} to {name}",
+        "name track {num} {name}",
+        "call track {num} {name}"
+      ],
+      "action": "rename",
+      "vars": ["num", "name"]
+    },
+    {
+      "patterns": [
+        "rename this to {name}",
+        "name this {name}",
+        "call this {name}"
+      ],
+      "action": "rename_selected",
+      "vars": ["name"]
+    }
+  ],
+  
+  "track_grouping": [
+    {
+      "patterns": [
+        "group tracks {start} to {end}",
+        "group {start} to {end}",
+        "make folder {start} to {end}",
+        "folder tracks {start} to {end}"
+      ],
+      "action": "group",
+      "vars": ["start", "end"]
+    },
+    {
+      "patterns": [
+        "group tracks {start} to {end} as {name}",
+        "group {start} to {end} as {name}",
+        "make folder {start} to {end} called {name}"
+      ],
+      "action": "group_named",
+      "vars": ["start", "end", "name"]
+    },
+    {
+      "patterns": [
+        "ungroup track {num}",
+        "unpack track {num}",
+        "ungroup folder {num}",
+        "unpack folder {num}"
+      ],
+      "action": "ungroup",
+      "vars": ["num"]
+    }
+  ],
+  
+  "track_colors": [
+    {
+      "patterns": [
+        "color track {num} {color}",
+        "make track {num} {color}",
+        "paint track {num} {color}",
+        "track {num} {color}"
+      ],
+      "action": "color",
+      "vars": ["num", "color"]
+    },
+    {
+      "patterns": [
+        "color this {color}",
+        "make this {color}",
+        "paint this {color}"
+      ],
+      "action": "color_selected",
+      "vars": ["color"]
+    }
+  ],
+  
+  "track_visibility": [
+    {
+      "patterns": [
+        "hide track {num}",
+        "hide {num}"
+      ],
+      "action": "hide",
+      "vars": ["num"]
+    },
+    {
+      "patterns": [
+        "show track {num}",
+        "show {num}",
+        "unhide track {num}"
+      ],
+      "action": "show",
+      "vars": ["num"]
+    },
+    {
+      "patterns": [
+        "hide all except {num}",
+        "hide everything except {num}",
+        "only show track {num}",
+        "solo track {num} visibility"
+      ],
+      "action": "hide_except",
+      "vars": ["num"]
+    },
+    {
+      "patterns": [
+        "show all tracks",
+        "show everything",
+        "unhide all",
+        "show all"
+      ],
+      "action": "show_all",
+      "vars": []
+    }
+  ],
+  
+  "track_protection": [
+    {
+      "patterns": [
+        "lock track {num}",
+        "protect track {num}",
+        "freeze track {num}"
+      ],
+      "action": "lock",
+      "vars": ["num"]
+    },
+    {
+      "patterns": [
+        "unlock track {num}",
+        "unprotect track {num}",
+        "unfreeze track {num}"
+      ],
+      "action": "unlock",
+      "vars": ["num"]
+    }
+  ],
+  
+  "track_reordering": [
+    {
+      "patterns": [
+        "move track {num} up",
+        "move {num} up",
+        "track {num} up"
+      ],
+      "action": "move_up",
+      "vars": ["num"]
+    },
+    {
+      "patterns": [
+        "move track {num} down",
+        "move {num} down",
+        "track {num} down"
+      ],
+      "action": "move_down",
+      "vars": ["num"]
+    },
+    {
+      "patterns": [
+        "move track {num} up {amount}",
+        "move {num} up {amount} times"
+      ],
+      "action": "move_up_amount",
+      "vars": ["num", "amount"]
+    },
+    {
+      "patterns": [
+        "move track {num} down {amount}",
+        "move {num} down {amount} times"
+      ],
+      "action": "move_down_amount",
+      "vars": ["num", "amount"]
+    },
+    {
+      "patterns": [
+        "move track {num} to top",
+        "move {num} to top",
+        "track {num} to top"
+      ],
+      "action": "move_to_top",
+      "vars": ["num"]
+    },
+    {
+      "patterns": [
+        "move track {num} to bottom",
+        "move {num} to bottom",
+        "track {num} to bottom"
+      ],
+      "action": "move_to_bottom",
+      "vars": ["num"]
+    }
+  ],
+  
+  "color_names": {
+    "red": ["red", "pink"],
+    "orange": ["orange", "brown"],
+    "yellow": ["yellow"],
+    "green": ["green", "lime"],
+    "blue": ["blue", "cyan", "teal"],
+    "purple": ["purple", "violet", "magenta"],
+    "gray": ["gray", "grey", "white"]
+  },
+  
+  "common_track_names": [
+    "vocals", "lead", "harmony", "backing", "ad libs",
+    "drums", "kick", "snare", "hi hat", "cymbals", "percussion",
+    "bass", "sub bass",
+    "piano", "keys", "synth", "pad",
+    "guitar", "acoustic", "electric",
+    "strings", "brass", "horns",
+    "fx", "effects", "ambience"
+  ]
+}
