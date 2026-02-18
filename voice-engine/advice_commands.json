@@ -1,0 +1,125 @@
+{
+  "analysis_requests": [
+    {
+      "patterns": [
+        "analyze the mix",
+        "check the mix",
+        "how does this sound",
+        "what do you think"
+      ],
+      "action": "check_mix",
+      "vars": []
+    },
+    {
+      "patterns": [
+        "analyze track {num}",
+        "check track {num}"
+      ],
+      "action": "analyze_track",
+      "vars": ["num"]
+    },
+    {
+      "patterns": [
+        "project info",
+        "tell me about this project"
+      ],
+      "action": "project_info",
+      "vars": []
+    }
+  ],
+  
+  "specific_advice": [
+    {
+      "patterns": [
+        "how do i mix vocals",
+        "vocal mixing tips",
+        "help with vocals",
+        "vocals advice"
+      ],
+      "action": "vocal_advice",
+      "vars": []
+    },
+    {
+      "patterns": [
+        "how do i mix drums",
+        "drum mixing tips",
+        "help with drums",
+        "drums advice"
+      ],
+      "action": "drum_advice",
+      "vars": []
+    },
+    {
+      "patterns": [
+        "how do i mix bass",
+        "bass mixing tips",
+        "help with bass",
+        "bass advice"
+      ],
+      "action": "bass_advice",
+      "vars": []
+    },
+    {
+      "patterns": [
+        "general mixing tips",
+        "how do i mix",
+        "mixing advice",
+        "help me mix"
+      ],
+      "action": "general_advice",
+      "vars": []
+    }
+  ],
+  
+  "issue_detection": [
+    {
+      "patterns": [
+        "what needs fixing",
+        "any issues",
+        "check for problems",
+        "detect issues"
+      ],
+      "action": "detect_issues",
+      "vars": []
+    },
+    {
+      "patterns": [
+        "check for clipping",
+        "is it clipping",
+        "too loud"
+      ],
+      "action": "check_clipping",
+      "vars": []
+    },
+    {
+      "patterns": [
+        "sounds muddy",
+        "too much bass",
+        "check mud"
+      ],
+      "action": "check_mud",
+      "vars": []
+    },
+    {
+      "patterns": [
+        "sounds harsh",
+        "too bright",
+        "check harshness"
+      ],
+      "action": "check_harsh",
+      "vars": []
+    }
+  ],
+  
+  "help_requests": [
+    {
+      "patterns": [
+        "help",
+        "what can you do",
+        "midas help"
+      ],
+      "action": "show_help",
+      "vars": []
+    }
+  ]
+}
