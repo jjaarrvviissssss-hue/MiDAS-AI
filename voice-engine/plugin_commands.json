@@ -1,0 +1,195 @@
+{
+  "plugin_loading": [
+    {
+      "patterns": [
+        "add {plugin} to track {num}",
+        "load {plugin} on track {num}",
+        "add {plugin} on {num}"
+      ],
+      "action": "load_plugin",
+      "vars": ["plugin", "num"]
+    },
+    {
+      "patterns": [
+        "add {plugin}",
+        "load {plugin}",
+        "insert {plugin}"
+      ],
+      "action": "load_plugin_selected",
+      "vars": ["plugin"]
+    },
+    {
+      "patterns": [
+        "add compressor to track {num}",
+        "load eq on track {num}",
+        "add reverb to {num}"
+      ],
+      "action": "load_logic_plugin",
+      "vars": ["num"]
+    },
+    {
+      "patterns": [
+        "vocal chain on track {num}",
+        "load vocal chain on {num}"
+      ],
+      "action": "vocal_chain",
+      "vars": ["num"]
+    },
+    {
+      "patterns": [
+        "drum bus on track {num}",
+        "load drum bus on {num}"
+      ],
+      "action": "drum_bus",
+      "vars": ["num"]
+    }
+  ],
+  
+  "plugin_bypass": [
+    {
+      "patterns": [
+        "bypass plugin {slot} on track {num}",
+        "disable plugin {slot} track {num}",
+        "turn off plugin {slot} on {num}"
+      ],
+      "action": "bypass_plugin",
+      "vars": ["slot", "num"]
+    },
+    {
+      "patterns": [
+        "bypass all plugins on track {num}",
+        "disable all plugins on {num}",
+        "turn off all plugins {num}"
+      ],
+      "action": "bypass_all",
+      "vars": ["num"]
+    },
+    {
+      "patterns": [
+        "enable plugin {slot} on track {num}",
+        "turn on plugin {slot} track {num}"
+      ],
+      "action": "enable_plugin",
+      "vars": ["slot", "num"]
+    }
+  ],
+  
+  "plugin_windows": [
+    {
+      "patterns": [
+        "open plugin {slot} on track {num}",
+        "show plugin {slot} track {num}"
+      ],
+      "action": "open_plugin",
+      "vars": ["slot", "num"]
+    },
+    {
+      "patterns": [
+        "close plugin",
+        "close plugin window"
+      ],
+      "action": "close_plugin",
+      "vars": []
+    }
+  ],
+  
+  "plugin_parameters": [
+    {
+      "patterns": [
+        "increase parameter {amount}",
+        "parameter up {amount}",
+        "up {amount}"
+      ],
+      "action": "adjust_up",
+      "vars": ["amount"]
+    },
+    {
+      "patterns": [
+        "decrease parameter {amount}",
+        "parameter down {amount}",
+        "down {amount}"
+      ],
+      "action": "adjust_down",
+      "vars": ["amount"]
+    }
+  ],
+  
+  "plugin_presets": [
+    {
+      "patterns": [
+        "save preset {name}",
+        "save as {name}"
+      ],
+      "action": "save_preset",
+      "vars": ["name"]
+    },
+    {
+      "patterns": [
+        "load preset {name}",
+        "recall {name}"
+      ],
+      "action": "load_preset",
+      "vars": ["name"]
+    }
+  ],
+  
+  "plugin_removal": [
+    {
+      "patterns": [
+        "remove plugin {slot} from track {num}",
+        "delete plugin {slot} track {num}"
+      ],
+      "action": "remove_plugin",
+      "vars": ["slot", "num"]
+    },
+    {
+      "patterns": [
+        "remove all plugins from track {num}",
+        "clear plugins on track {num}",
+        "delete all plugins {num}"
+      ],
+      "action": "remove_all",
+      "vars": ["num"]
+    }
+  ],
+  
+  "plugin_navigation": [
+    {
+      "patterns": [
+        "next plugin",
+        "plugin next"
+      ],
+      "action": "next_plugin",
+      "vars": []
+    },
+    {
+      "patterns": [
+        "previous plugin",
+        "plugin previous",
+        "last plugin"
+      ],
+      "action": "previous_plugin",
+      "vars": []
+    },
+    {
+      "patterns": [
+        "show all plugins on track {num}",
+        "show plugins track {num}"
+      ],
+      "action": "show_all_plugins",
+      "vars": ["num"]
+    }
+  ],
+  
+  "common_plugins": {
+    "compressor": ["compressor", "comp"],
+    "eq": ["eq", "equalizer", "channel eq"],
+    "reverb": ["reverb", "space designer", "space"],
+    "delay": ["delay", "delay designer"],
+    "auto-tune": ["auto tune", "autotune", "pitch"],
+    "de-esser": ["de esser", "deesser"],
+    "limiter": ["limiter", "adaptive limiter"],
+    "gate": ["gate", "noise gate"],
+    "distortion": ["distortion", "overdrive"]
+  }
+}
