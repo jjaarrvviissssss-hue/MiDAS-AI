@@ -1,0 +1,77 @@
+{
+  "templates": [
+    {
+      "patterns": [
+        "create vocal session",
+        "vocal template",
+        "new vocal session",
+        "vocal recording setup"
+      ],
+      "action": "vocal_session",
+      "vars": []
+    },
+    {
+      "patterns": [
+        "create beat session",
+        "beat template",
+        "new beat session",
+        "beat production setup"
+      ],
+      "action": "beat_session",
+      "vars": []
+    },
+    {
+      "patterns": [
+        "create full song session",
+        "full song template",
+        "complete session",
+        "full production setup"
+      ],
+      "action": "full_song_session",
+      "vars": []
+    }
+  ],
+  
+  "organization": [
+    {
+      "patterns": [
+        "organize tracks",
+        "clean up project",
+        "organize this"
+      ],
+      "action": "organize",
+      "vars": []
+    },
+    {
+      "patterns": [
+        "create standard markers",
+        "standard song structure",
+        "add song markers"
+      ],
+      "action": "standard_markers",
+      "vars": []
+    }
+  ],
+  
+  "quick_ops": [
+    {
+      "patterns": [
+        "reset mixer",
+        "clear mixer",
+        "unsolo everything",
+        "unmute all"
+      ],
+      "action": "reset_mixer",
+      "vars": []
+    },
+    {
+      "patterns": [
+        "set tempo to {bpm}",
+        "tempo {bpm}",
+        "{bpm} bpm"
+      ],
+      "action": "set_tempo",
+      "vars": ["bpm"]
+    }
+  ]
+}
